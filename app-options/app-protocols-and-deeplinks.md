@@ -60,7 +60,7 @@ So, if you wanted to link from a website to a deeplink within Interplay app then
 
 You may wish to opt-out of the default behaviour for App Protocols. For example, you may wish to pass data to your app through a URL but not load a new page.
 
-Let's say that we want to handle the URL `spotify://pause`. When this link is opened we want to pause the music but we don't want to change the current URL of our app. We can prevent navigation by calling `preventDefault()` on our event object. Here's an example:
+Let's say that we want to handle the URL `spotify://pause`. When this link is opened we want to pause the music but we don't want to change the current URL of our app. We can prevent navigation by calling `event.preventDefault()`. Here's an example:
 
 ```javascript
 window.todesktop.on("open-protocol-url", (_, event) => {
