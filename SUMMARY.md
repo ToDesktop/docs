@@ -28,6 +28,7 @@
 * [👀 Find In Page](javascript-api/find-in-page.md)
 * [🗺 Window](javascript-api/window.md)
 * [🎛 Application Menu](javascript-api/application-menu.md)
+* [🎚 Context menu](javascript-api/context-menu.md)
 
 ## Recipes
 
