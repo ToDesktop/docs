@@ -38,3 +38,19 @@ Configuring this correctly can be tricky so if you have any trouble please get i
 
 ![Editing Internal URLs on the Edit App page](../.gitbook/assets/image%20%283%29.png)
 
+### Dynamically adding Internal URLs
+
+Sometimes it may be neccesary to dynamically change internal URLs. You can use our runtime API to do this. To get current internal URLs you can use `window.todesktop.app.getInternalUrls()`. To update internal URLs you can use `window.todesktop.app.updateInternalUrls(newInternalUrls)`.
+
+```javascript
+await window.todesktop.app.getInternalUrls();
+// -> ".*(apple.com|amazon.com).*"
+
+// Let's add google.com as an internal URL
+const newInternalUrls = ".*(apple.com|amazon.com|google.com).*";
+await window.todesktop.app.updateInternalUrls(newInternalUrls);
+
+await window.todesktop.app.getInternalUrls();
+// -> ".*(apple.com|amazon.com|google.com).*"
+```
+
