@@ -5,7 +5,7 @@ We provide helpful information via the `window.todesktop` object. Here is an ove
 ```javascript
 if (window.todesktop) {
   /*
-    The current version of your app: e.g. '1.0'
+    The current version of your app: e.g. '1.0.0'
   */
   console.log(window.todesktop.version);
   
