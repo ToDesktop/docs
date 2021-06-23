@@ -49,7 +49,7 @@ window.todesktop.on('pushNotifications.receive', (e, notification) => {
 
 ## todesktop.on\('pushNotifications.error'\)
 
-Triggered when the push notifications service is started successfully and an FCM registration token has been received.
+Triggered when there is an error with the push notification service.
 
 ```javascript
 window.todesktop.on('pushNotifications.error', (e, error) => {
