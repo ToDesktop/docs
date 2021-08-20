@@ -114,7 +114,7 @@ GAPI handles signing in based off a redirect automatically so you'll need to ope
 const hash = window.location.hash.substr(1);
 
 window.location.href = `
-    todesktop://login#${hash}
+    todesktop://login?${hash}
   `; // Use the app protocol you specified before
 ```
 
