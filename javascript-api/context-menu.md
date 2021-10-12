@@ -14,7 +14,7 @@ description: >-
 
 For example, to create a context menu like the screenshot below:
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](<../.gitbook/assets/image (17).png>)
 
 You would use the following code:
 
@@ -68,5 +68,4 @@ document.getElementById("my-message").addEventListener("contextmenu", (e) => {
 
 ```
 
-![](../.gitbook/assets/image%20%2817%29.png)
-
+![](<../.gitbook/assets/image (19).png>)

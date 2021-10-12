@@ -12,7 +12,7 @@ You can easily set the counter using the `setBadgeCount` method. Setting the cou
 window.todesktop.app.setBadgeCount(2);
 ```
 
-![Badge count set to 2 \(Mac\)](../.gitbook/assets/image%20%2814%29.png)
+![Badge count set to 2 (Mac)](<../.gitbook/assets/image (1).png>)
 
 ## Text Badges
 
@@ -26,7 +26,7 @@ On mac, you have the option to set the set the dock badge to any text you like.
 window.todesktop.app.dock.setBadge("👋🙊 Hello");
 ```
 
-![Text badge set to &quot;&#x1F44B;&#x1F64A; Hello&quot;](../.gitbook/assets/image%20%2810%29.png)
+![Text badge set to "👋🙊 Hello"](<../.gitbook/assets/image (2).png>)
 
 ## **Bouncing dock icon**
 
@@ -36,7 +36,7 @@ Work on **Mac** only
 
 Bouncing the dock icon has two modes: `critical` and `informational`. If no parameters are used then the default is `informational`.
 
-* `informational` — the dock icon will bounce once \(for a duration of one second\)
+* `informational` — the dock icon will bounce once (for a duration of one second)
 * `critical` — the dock icon will bounce until either the application becomes active or the request is canceled
 
 ```javascript
@@ -53,7 +53,7 @@ setTimeout(() => {
 ## Show progress bar
 
 {% hint style="info" %}
-Works on **all** platforms \(Windows, Mac and Linux\). On Linux, only the Unity desktop environment is supported.
+Works on **all** platforms (Windows, Mac and Linux). On Linux, only the Unity desktop environment is supported.
 {% endhint %}
 
 ```javascript
@@ -76,13 +76,11 @@ window.todesktop.window.setProgressBar(0.75, {
 })
 ```
 
-![Progress bar set to 0.75 \(Mac\)](../.gitbook/assets/image%20%281%29.png)
+![Progress bar set to 0.75 (Mac)](<../.gitbook/assets/image (3).png>)
 
 ## Putting it all together — An homage to Daft Punk
 
-We made a quick video that puts all the methods together. It's just a bit of fun and not very practical but we hope you enjoy it as much as we enjoyed making it \(headphones recommended\):
+We made a quick video that puts all the methods together. It's just a bit of fun and not very practical but we hope you enjoy it as much as we enjoyed making it (headphones recommended):
 
 {% embed url="https://vimeo.com/356637449" %}
-
-
 

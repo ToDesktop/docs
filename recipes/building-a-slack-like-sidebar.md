@@ -1,9 +1,9 @@
-# 👨‍👩‍👦 Building a Slack-like sidebar
+# 👪 Building a Slack-like sidebar
 
 If your app allows users to sign into multiple accounts then you need an easy way for them to switch between. Having a sidebar of accounts is a great solution. Here we're going to build a basic application to manage multiple GitHub logins
 
 {% hint style="warning" %}
-The BrowserViews API is in beta and may change \(or be completely removed\) without warning.
+The BrowserViews API is in beta and may change (or be completely removed) without warning.
 {% endhint %}
 
 ## Scaffolding
@@ -53,9 +53,9 @@ To begin we need to describe where the sidebar and content go, ToDesktop lets yo
 
 ```
 
-Here we create two sections: the sidebar and content. We use `data-view-url` to tell ToDesktop where the content of these views come from. Each section can be thought of like a _tab_ running independently from each other. 
+Here we create two sections: the sidebar and content. We use `data-view-url` to tell ToDesktop where the content of these views come from. Each section can be thought of like a _tab _running independently from each other. 
 
-We use `data-view-partition` to set the default _partition_ for a view. Each partition has its own cookies, localStorage, etc. By changing the partition we can swap accounts.
+We use `data-view-partition` to set the default _partition _for a view. Each partition has its own cookies, localStorage, etc. By changing the partition we can swap accounts.
 
 ## Initializing the views
 
@@ -114,9 +114,9 @@ The sidebar is where we'll show users a list of their accounts and let them add 
 
 ## Seeing the app
 
-Serve the project to `localhost:3000` \(or whatever address you prefer and change `data-view-url` to that url\) and run the development ToDesktop app pointed at `localhost:3000`
+Serve the project to `localhost:3000` (or whatever address you prefer and change `data-view-url` to that url) and run the development ToDesktop app pointed at `localhost:3000`
 
-![GitHub with sidebar](../.gitbook/assets/screenshot-2021-02-03-at-09.50.30.png)
+![GitHub with sidebar](<../.gitbook/assets/Screenshot 2021-02-03 at 09.50.30.png>)
 
 ## Adding accounts
 
@@ -193,13 +193,13 @@ If you're using `react`,`svelte`,etc then you can do this easier but for this ex
 </script>
 ```
 
-With this we can click the **New** button to add new buttons to the sidebar representing accounts. We give each account an id which will we later use for partitions. Finally, we save the accounts to localStorage to access on subsequent app opens.
+With this we can click the **New **button to add new buttons to the sidebar representing accounts. We give each account an id which will we later use for partitions. Finally, we save the accounts to localStorage to access on subsequent app opens.
 
 ![Adding new accounts](../.gitbook/assets/ezgif-6-fb3d0749efad.gif)
 
 ## Switching Accounts
 
-ToDesktop provides some APIs for interacting with **views.** We'll be using `todesktop.views.switch`
+ToDesktop provides some APIs for interacting with **views. **We'll be using `todesktop.views.switch`
 
 **sidebar.html:**
 
@@ -222,4 +222,3 @@ const switchAccount = () => {
 ## Finish
 
 And there, you've now build an app using ToDesktop to switch between multiple Github accounts. You can try it out, create some accounts in the sidebar, switch between them and sign into different GitHub accounts. 🥳
-

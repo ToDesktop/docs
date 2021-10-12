@@ -6,7 +6,9 @@ A menubar app is fantastic for providing a quick way to keep up to date with act
 
 We provide an API that allows you to enlarge the menubar window which may make it easier to interact with your app and view more information.
 
-{% embed url="https://vimeo.com/392547830" caption="Menubar app expanding video" %}
+{% embed url="https://vimeo.com/392547830" %}
+Menubar app expanding video
+{% endembed %}
 
 ### The API
 
@@ -78,4 +80,3 @@ toggleEnlargeButton.addEventListener('click', () => {
 ```
 
  
-

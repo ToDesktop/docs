@@ -1,4 +1,4 @@
-# 👩‍💻 Add Custom Javascript to your Desktop App
+# 👩💻 Add Custom Javascript to your Desktop App
 
 We expose a `window.todesktop` object which provides info about the device and the app as well as methods which provide extra features.
 
@@ -16,9 +16,12 @@ We use the most up to date version of Chromium so you can use the latest browser
 
 We recommend separating all of your desktop specific logic into a separate javascript file:
 
-{% page-ref page="../recipes/separating-desktop-logic.md" %}
+{% content-ref url="../recipes/separating-desktop-logic.md" %}
+[separating-desktop-logic.md](../recipes/separating-desktop-logic.md)
+{% endcontent-ref %}
 
 You can see all of the available info and methods on the `window.todesktop` object in that section of the docs.
 
-{% page-ref page="../javascript-api/introduction.md" %}
-
+{% content-ref url="../javascript-api/introduction.md" %}
+[introduction.md](../javascript-api/introduction.md)
+{% endcontent-ref %}

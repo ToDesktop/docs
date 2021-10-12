@@ -60,5 +60,3 @@ console.log(printers[0]);
 //}
 ```
 
-
-

@@ -16,7 +16,7 @@ To start the push notifications service all you need is a sender ID.
   window.todesktop.pushNotifications.start("12345678901")
 ```
 
-## todesktop.on\('pushNotifications.start'\)
+## todesktop.on('pushNotifications.start')
 
 Triggered when the push notifications service is started successfully and an FCM registration token has been received.
 
@@ -26,7 +26,7 @@ window.todesktop.on('pushNotifications.start', (e, token) => {
 });
 ```
 
-## todesktop.on\('pushNotifications.receive'\)
+## todesktop.on('pushNotifications.receive')
 
 Triggered when a push notifications service is received.
 
@@ -47,7 +47,7 @@ window.todesktop.on('pushNotifications.receive', (e, notification) => {
 });
 ```
 
-## todesktop.on\('pushNotifications.error'\)
+## todesktop.on('pushNotifications.error')
 
 Triggered when there is an error with the push notification service.
 
@@ -57,7 +57,7 @@ window.todesktop.on('pushNotifications.error', (e, error) => {
 });
 ```
 
-## todesktop.on\('pushNotifications.tokenUpdate'\)
+## todesktop.on('pushNotifications.tokenUpdate')
 
 Triggered when the FCM registration token has been updated.
 
@@ -66,4 +66,3 @@ window.todesktop.on('pushNotifications.tokenUpdate', (e, token) => {
     console.log(`Your FCM token has been updated to: ${token}`)
 });
 ```
-

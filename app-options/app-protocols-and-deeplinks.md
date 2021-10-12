@@ -6,7 +6,7 @@ description: How to use custom protocol links to launch your app built with ToDe
 
 ## What are App Protocols?
 
-You've probably seen app protocols before. Perhaps you've seen them with iTunes \(`itmss://`\) or Spotify \(`spotify://`\) or Slack \(`slack://`\). App protocols provide an easy way for you to launch your application from inside another application. 
+You've probably seen app protocols before. Perhaps you've seen them with iTunes (`itmss://`) or Spotify (`spotify://`) or Slack (`slack://`). App protocols provide an easy way for you to launch your application from inside another application. 
 
 One common use-cases is to launch a desktop application from a website.
 
@@ -28,9 +28,9 @@ We can also add more information to go to a specific part of a desktop applicati
 
 ### Enabling App Protocols
 
-You can enable App Protocols for your app by selecting the “Support App Protocol \(deeplink\)” option in the “App Options” box. You can then type the App Protocol that you wish to use. In the example below, we have chosen `interplay://` as the app protocol.
+You can enable App Protocols for your app by selecting the “Support App Protocol (deeplink)” option in the “App Options” box. You can then type the App Protocol that you wish to use. In the example below, we have chosen `interplay://` as the app protocol.
 
-![](../.gitbook/assets/app-protocols.png)
+![](<../.gitbook/assets/app protocols (1).png>)
 
 ### Using App Protocols
 
@@ -82,4 +82,3 @@ window.todesktop.on("open-protocol-url", (_, event) => {
 ### AppImage Support
 
 Your users should use [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) to install and integrate your app into their desktop environment. Otherwise this feature may not work.
-

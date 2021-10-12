@@ -6,7 +6,7 @@ description: >-
 
 # 👂 Menubar Window Events
 
-## todesktop.on\('show'\)
+## todesktop.on('show')
 
 Triggered when a menubar window is shown.
 
@@ -16,7 +16,7 @@ window.todesktop.on('show', () => {
 });
 ```
 
-## todesktop.on\('hide'\)
+## todesktop.on('hide')
 
 Triggered when a menubar window is hidden.
 
@@ -25,4 +25,3 @@ window.todesktop.on('hide', () => {
     console.log('menubar window is now hidden')
 });
 ```
-

@@ -4,7 +4,7 @@ ToDesktop supports the native "find in page" feature you normally use in web bro
 
 ### HTML
 
-First up let's add some simple HTML \(or JSX\) for the input box \(to get the text we want to look for\) and buttons to start \(& navigate\) the search and to stop it. We also need to display the current match ordinal and the total number of matches.
+First up let's add some simple HTML (or JSX) for the input box (to get the text we want to look for) and buttons to start (& navigate) the search and to stop it. We also need to display the current match ordinal and the total number of matches.
 
 {% tabs %}
 {% tab title="HTML" %}
@@ -115,6 +115,4 @@ if (window.todesktop) {
   });
 }
 ```
-
-
 

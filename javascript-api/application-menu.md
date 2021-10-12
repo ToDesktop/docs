@@ -8,14 +8,14 @@ description: >-
 # 🎛 Application Menu
 
 {% hint style="warning" %}
-This API is in beta and may change \(or be completely removed\) without warning.
+This API is in beta and may change (or be completely removed) without warning.
 {% endhint %}
 
 ### Add a menu item to the application menu
 
 `window.todesktop.appMenu.add(parentMenu, label, callback, [options])`
 
-**Promise&lt;void&gt;** - ****Menu Item is added to the application menu model. However, it will not appear on the UI until `refresh()` is called.
+**Promise\<void> **-** **Menu Item is added to the application menu model. However, it will not appear on the UI until `refresh()` is called.
 
 This allows you to easily add custom items to the application menu that control your application. 
 
@@ -45,17 +45,17 @@ await window.todesktop.appMenu.add(
 await window.todesktop.appMenu.refresh()
 ```
 
-![&quot;Save Note&quot; has been added to the Application Menu on Mac](../.gitbook/assets/image%20%287%29.png)
+!["Save Note" has been added to the Application Menu on Mac](<../.gitbook/assets/image (15).png>)
 
 ### Refresh the application menu to reflect any changes
 
 `window.todesktop.appMenu.refresh()`
 
-**Promise&lt;void&gt;** - ****The application menu is refreshed and the UI has been updated.
+**Promise\<void> **-** **The application menu is refreshed and the UI has been updated.
 
 When you add a menu item to the menubar, it does not immediately appear in the application menu. You need to call `refresh()` to update the menu that is displayed on the UI.
 
-If you are adding multiple items to the application menu then it is best to only call `refresh()` _after_ you have added all of the necessary items to the application menu.
+If you are adding multiple items to the application menu then it is best to only call `refresh()` _after _you have added all of the necessary items to the application menu.
 
 ```javascript
 // Batch add all the app menu items
@@ -74,6 +74,4 @@ await Promise.all([
 // Once they are all added then you can call refresh
 await window.todesktop.appMenu.refresh()
 ```
-
-
 

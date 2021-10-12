@@ -9,13 +9,15 @@ description: >-
 
 ## Backstory
 
-Starting on **January 4th 2021** Google began blocking Google account sign-ins from embedded browsers including Electron \(the framework ToDesktop uses under the hood\)
+Starting on **January 4th 2021 **Google began blocking Google account sign-ins from embedded browsers including Electron (the framework ToDesktop uses under the hood)
 
-{% embed url="https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html" caption="Google\'s Announcement" %}
+{% embed url="https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html" %}
+Google's Announcement
+{% endembed %}
 
 If you previously showed your users a Google sign in screen inside your app they might now be seeing a warning telling them that Google doesn't allow sign ins from insecure browsers. 
 
-![A warning on Google&apos;s sign in page](../.gitbook/assets/desktop-authentication-warning-message.png)
+![A warning on Google's sign in page](../.gitbook/assets/desktop-authentication-warning-message.png)
 
 In order to continue allowing your users to sign into your desktop app with Google you'll have to move the sign in flow to the user's default browser.
 
@@ -24,11 +26,11 @@ In order to continue allowing your users to sign into your desktop app with Goog
 We need to ensure all Google OAuth links open in the user's default browser and set an [app protocol](https://docs.todesktop.com/app-options/app-protocols-and-deeplinks) so we can get back to your Desktop app from the browser.
 
 1. Go to [https://app.todesktop.com](https://app.todesktop.com) and select your app. 
-2. Tick the checkbox for _Open Google OAuth Screen in Browser_ in **App Options**
-3. Tick the checkbox for _Support App Protocol_ and enter a protocol 
-   1. **E.g:** `todesktop://`
+2. Tick the checkbox for_ Open Google OAuth Screen in Browser _in **App Options**
+3. Tick the checkbox for _Support App Protocol _and enter a protocol 
+   1. **E.g: **`todesktop://`
 
-![App Options in app.todesktop.com](../.gitbook/assets/screenshot-2021-02-04-at-15.00.37.png)
+![App Options in app.todesktop.com](<../.gitbook/assets/Screenshot 2021-02-04 at 15.00.37.png>)
 
 ## Redirect instead of showing prompt
 
@@ -66,7 +68,7 @@ const signInToGoogle = () => {
 
 Here we use `window.todesktop` to check if we're in the Desktop app. If so, we load `auth2` into GAPI, initialize it with our project's client id, and then get an auth  instance and start the redirect sign in.  
 
-You can find your project's Google Client ID in your Project's Developers Console [Credentials page](https://console.developers.google.com/apis/credentials?project=_).
+You can find your project's Google Client ID in your Project's Developers Console [Credentials page](https://console.developers.google.com/apis/credentials?project=\_).
 
 {% hint style="info" %}
 If you're using typescript you can add [@types/gapi](https://www.npmjs.com/package/@types/gapi) and [@types/gapi.auth2](https://www.npmjs.com/package/@types/gapi.auth2) to the `types` field in your `tsconfig.json`
@@ -74,11 +76,11 @@ If you're using typescript you can add [@types/gapi](https://www.npmjs.com/packa
 
 #### 3. Add a new redirect URL to your project
 
-In your project's Developer Console [Credentials page](https://console.developers.google.com/apis/credentials?project=_) click the OAuth 2.0 Client that you're using and add a desktop specific redirect URL to **Authorised redirect URIs**
+In your project's Developer Console [Credentials page](https://console.developers.google.com/apis/credentials?project=\_) click the OAuth 2.0 Client that you're using and add a desktop specific redirect URL to **Authorised redirect URIs**
 
-![http://localhost:3000/desktopLogin in Authorized redirect URIs](../.gitbook/assets/screenshot-2021-02-05-at-14.50.46.png)
+![http://localhost:3000/desktopLogin in Authorized redirect URIs](<../.gitbook/assets/Screenshot 2021-02-05 at 14.50.46.png>)
 
-After signing in Google will redirect users to this URL with `id_token` as a hash parameter e.g:`http://localhost:3000/desktopLogin#scope=email&id_token=xxxxx-xxxxxx`\)
+After signing in Google will redirect users to this URL with `id_token` as a hash parameter e.g:`http://localhost:3000/desktopLogin#scope=email&id_token=xxxxx-xxxxxx`)
 
 #### 4. Redirect back to your Desktop App
 
@@ -157,4 +159,3 @@ gapi.load("auth2", () => {
     })
 })
 ```
-

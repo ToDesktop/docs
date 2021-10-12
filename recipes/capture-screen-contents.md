@@ -109,7 +109,7 @@ For example if you wanted to reproduce a browsers selection feature you could lo
 
 This will give you something like:
 
-![Getting Screens / Windows in Desktop App](../.gitbook/assets/desktop-capture-gif.gif)
+![Getting Screens / Windows in Desktop App](<../.gitbook/assets/Desktop Capture Gif.gif>)
 
 ## Get the stream to a source
 
@@ -151,17 +151,15 @@ Exposes the `destopCapturer.getSources` electron API: [https://www.electronjs.or
 
 Accepts an options object:
 
-* `types` String\[\] - The types of desktop sources to be captured, either`screen` or `window`.
-* `thumbnailSize` {width: number, height: number} \(optional\) - Default is `150` x `150`.
-* `fetchWindowIcons` Boolean \(optional\) - Default value is `false`
+* `types` String\[] - The types of desktop sources to be captured, either`screen` or `window`.
+* `thumbnailSize` {width: number, height: number} (optional) - Default is `150` x `150`.
+* `fetchWindowIcons` Boolean (optional) - Default value is `false`
 
 Returns a `Promise` which resolves into an array of `DesktopCapturerSource` objects each having:
 
 * `id` String - The id of a window or screen that can be used as a `chromeMediaSourceId` later
-* `name` String - The name of the screen \(`Entire Screen` or `Screen <index>`\) or the window's title
+* `name` String - The name of the screen (`Entire Screen` or `Screen <index>`) or the window's title
 * `thumbnail` String - A data Url of the image
 * `display_id` String - A unique identifier that will correspond to the `id` property
 * `appIcon` String - A data Url of the app Icon or `null` if type is screen
-
-
 

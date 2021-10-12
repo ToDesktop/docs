@@ -4,7 +4,7 @@
 
 Minimize the currently active window
 
-```text
+```
   window.todesktop.window.minimize()
 ```
 
@@ -12,7 +12,7 @@ Minimize the currently active window
 
 Maximize the currently active window
 
-```text
+```
   window.todesktop.window.maximize()
 ```
 
@@ -20,7 +20,7 @@ Maximize the currently active window
 
 Unmaximizes the currently active window
 
-```text
+```
   window.todesktop.window.unmaximize()
 ```
 
@@ -28,7 +28,7 @@ Unmaximizes the currently active window
 
 Sets the currently active window to fullscreen
 
-```text
+```
   window.todesktop.window.fullscreen()
 ```
 
@@ -36,7 +36,7 @@ Sets the currently active window to fullscreen
 
 Unsets the currently active window to fullscreen
 
-```text
+```
   window.todesktop.window.unfullscreen()
 ```
 
@@ -57,4 +57,3 @@ window.todesktop.on('window.leave-full-screen', () => {
     console.log('window has left fullscreen mode')
 });
 ```
-

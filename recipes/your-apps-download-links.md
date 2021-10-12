@@ -1,4 +1,4 @@
-# ☁️ Download Links for your Website
+# ☁ Download Links for your Website
 
 When linking to your desktop app you can use our **universal** link. You can add this link to your website and it will work regardless of which operating system your user is running.
 
@@ -12,17 +12,17 @@ The universal link will:
 
 Your universal link looks like this:
 
-```text
+```
 https://dl.todesktop.com/{{YOUR_APP_ID}}
 ```
 
 You can get your universal link from the ToDesktop builder, just click on the cog in top-right.
 
-![](../.gitbook/assets/copy-universal-link-to-clipboard.png)
+![](<../.gitbook/assets/copy universal link to clipboard.png>)
 
 Once you click the menu item then the Universal URL will be copied to your clipboard. The universal download link should look something like this:
 
-```text
+```
 https://dl.todesktop.com/190911i1k98bqno
 ```
 
@@ -34,7 +34,7 @@ If you want to use the URL for the Mac/Windows/Linux build then you can click th
 
 So, if you want to get the latest Mac build of your desktop app then your download link should look something like this:
 
-```text
+```
 https://dl.todesktop.com/190911i1k98bqno/mac
 ```
 
@@ -61,4 +61,3 @@ To add a simple download link to your website, you could use the following HTML:
   Download our Linux App
 </a>
 ```
-

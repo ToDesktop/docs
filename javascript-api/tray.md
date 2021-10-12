@@ -8,17 +8,17 @@ description: We allow you to add to the system's tray (notification area)
 
 The Tray is the area where applications can put their icons to be easily accessed by users. On macOS this is the menubar and on Windows it's the system tray.
 
-## todesktop.tray.setTitle\(title\)
+## todesktop.tray.setTitle(title)
 
 {% hint style="info" %}
-Works on **macOS** only. Will throw on Windows & Linux
+Works on **macOS **only. Will throw on Windows & Linux
 {% endhint %}
 
 ```javascript
 todesktop.tray.setTitle('title')
 ```
 
-## todesktop.tray.destroy\(\)
+## todesktop.tray.destroy()
 
 This will destroy the tray item immediately
 
@@ -49,4 +49,3 @@ function startTimer () {
 This will give you something like:
 
 ![](../.gitbook/assets/ezgif-3-3158a09e0fc1.gif)
-

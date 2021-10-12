@@ -1,7 +1,7 @@
-# ❇️ Send Native Notifications
+# 🌟 Send Native Notifications
 
 {% hint style="info" %}
-Notifications are only available in secure contexts \(HTTPS\).
+Notifications are only available in secure contexts (HTTPS).
 {% endhint %}
 
 You can send notifications to your users with the [HTML5 Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API). We intercept the notification and send a native OS notification to your user instead.
@@ -29,6 +29,4 @@ new Notification('Hello world', {
     sound: './notification.mp3',
 })
 ```
-
-
 

@@ -1,4 +1,4 @@
-# ℹ️ Info
+# ℹ Info
 
 We provide helpful information via the `window.todesktop` object. Here is an overview of what's available:
 
@@ -39,4 +39,3 @@ if (window.todesktop) {
 {% hint style="info" %}
 Always make sure `window.todesktop` is present before trying to access its properties or use its methods.
 {% endhint %}
-

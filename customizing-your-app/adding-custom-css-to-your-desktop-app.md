@@ -32,7 +32,7 @@ html.todesktop .announcement {
 
 You can also do the opposite and only show an element in your desktop app.
 
-A common use-case is to show browser controls \(back, forward, refresh\) in your desktop app's user interface. Here's an example of how you could achieve this:
+A common use-case is to show browser controls (back, forward, refresh) in your desktop app's user interface. Here's an example of how you could achieve this:
 
 {% tabs %}
 {% tab title="app.css" %}
@@ -63,11 +63,11 @@ html.todesktop .forward-button {
 
 You may wish to add styles that apply only on specific operating systems.
 
-| Class name | Platform \(operating system\) target |
-| :--- | :--- |
-| `.todesktop-platform-win32` | Windows |
-| `.todesktop-platform-darwin` | macOs |
-| `.todesktop-platform-linux` | Linux |
+| Class name                   | Platform (operating system) target |
+| ---------------------------- | ---------------------------------- |
+| `.todesktop-platform-win32`  | Windows                            |
+| `.todesktop-platform-darwin` | macOs                              |
+| `.todesktop-platform-linux`  | Linux                              |
 
 In the styles below we add a margin that will only apply on the Mac operating system.
 
@@ -76,6 +76,4 @@ html.todesktop-platform-darwin .header {
   margin-top: 10px;
 }
 ```
-
-
 

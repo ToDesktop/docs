@@ -8,5 +8,3 @@ Opens a URL in the user's default browser
 window.todesktop.contents.openUrlInBrowser('https://todesktop.com');
 ```
 
-
-

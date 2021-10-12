@@ -1,4 +1,4 @@
-# ↔️ Add Browser Controls to your Desktop App
+# ↔ Add Browser Controls to your Desktop App
 
 ## Your desktop app is _not_ a web browser
 
@@ -18,7 +18,7 @@ Before you start you might want to read how to use ToDesktop's [CSS hooks](../cu
 
 ### HTML
 
-First up let's add some simple HTML \(or JSX\) for our app buttons. You can put this snippet wherever you wish your navigation buttons to appear.
+First up let's add some simple HTML (or JSX) for our app buttons. You can put this snippet wherever you wish your navigation buttons to appear.
 
 {% tabs %}
 {% tab title="HTML" %}
@@ -92,11 +92,11 @@ We can add some more styles to make our buttons look how we want them to look.
 }
 ```
 
-![Now our buttons look something like this.](../.gitbook/assets/image.png)
+![Now our buttons look something like this.](<../.gitbook/assets/image (9).png>)
 
 ### Making it work
 
-Now let's make our buttons actually work. We can use ToDesktop's goBack\(\) and goForward\(\) methods to go back or forward through our navigation history.
+Now let's make our buttons actually work. We can use ToDesktop's goBack() and goForward() methods to go back or forward through our navigation history.
 
 ```javascript
 if (window.todesktop) {
@@ -162,7 +162,7 @@ if (window.todesktop) {
 
 Finally, let's add some more styles to our buttons so that they are faded when disabled.
 
-![Back button is enabled and forward button is disabled](../.gitbook/assets/image%20%2813%29.png)
+![Back button is enabled and forward button is disabled](<../.gitbook/assets/image (10).png>)
 
 ```css
 .browser-navigation button:disabled {
@@ -174,6 +174,4 @@ Finally, let's add some more styles to our buttons so that they are faded when d
   background: #ddd;
 }
 ```
-
-
 
