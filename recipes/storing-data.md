@@ -10,7 +10,7 @@ Say you have your customers login at https://login.yourapp.com which then redire
 
 ```javascript
 // On login to subdomain https://yourcustomer.yourapp.com
-if (windows.todesktop) {
+if (window.todesktop) {
   localStorage.setItem('subdomain', 'yourcustomer');
 }
 
@@ -23,6 +23,8 @@ if (window.todesktop) {
   }
 }
 ```
+
+
 
 {% hint style="info" %}
 We recommend having a separate javascript app for all of your ToDesktop specific login and importing that conditionally when your app is running as a desktop app.
