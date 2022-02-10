@@ -24,7 +24,7 @@
 * [👂 Menubar Window Events](javascript-api/menubar-window-events.md)
 * [⌨ Global Shortcuts](javascript-api/global-shortcuts.md)
 * [🧰 Tray](javascript-api/tray.md)
-* [👉 Push Notifications](javascript-api/push-notifications.md)
+* [👉 Push Notifications with Firebase Cloud Messaging](javascript-api/push-notifications.md)
 * [👀 Find In Page](javascript-api/find-in-page.md)
 * [🗺 Window](javascript-api/window.md)
 * [🎛 Application Menu](javascript-api/application-menu.md)
