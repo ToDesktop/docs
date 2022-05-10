@@ -2,7 +2,7 @@
 description: Push notifications through Firebase Cloud Messaging
 ---
 
-# 👉 Push Notifications
+# 👉 Push Notifications with Firebase Cloud Messaging
 
 {% hint style="info" %}
 Push notifications are not enabled by default for all apps. If you want us to enable them in your app then email us at hi@todesktop.com.
@@ -14,6 +14,14 @@ To start the push notifications service all you need is a sender ID.
 
 ```javascript
   window.todesktop.pushNotifications.start("12345678901")
+```
+
+If you want to automatically show notifications then you can do the following:
+
+```javascript
+window.todesktop.pushNotifications.start("12345678901", {
+  showNotifications: true
+});
 ```
 
 ## todesktop.on('pushNotifications.start')
