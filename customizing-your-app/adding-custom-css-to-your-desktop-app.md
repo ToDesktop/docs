@@ -2,6 +2,8 @@
 
 We add a `todesktop` class to the html element on each page of your app. You can use this to identify when your app is being run as a desktop app.
 
+### Hide element from desktop app
+
 If you want to hide an element on your desktop app you could do something like this:
 
 {% tabs %}
@@ -29,6 +31,8 @@ html.todesktop .announcement {
 ```
 {% endtab %}
 {% endtabs %}
+
+### Show element on desktop app only (hide from web app)
 
 You can also do the opposite and only show an element in your desktop app.
 
